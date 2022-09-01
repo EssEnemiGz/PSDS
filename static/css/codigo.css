@@ -1,0 +1,182 @@
+*{
+	margin:0; 
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Black Ops One', cursive;
+}
+
+header{
+	min-height: 2000px;
+	background: #000;
+	display: flex;
+	justify-content: space-between;*/
+}
+
+#container{
+	background: #000;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+}
+
+
+#cronometro{
+	height: 100%;
+	width: 70%;
+	/*text-align: top;
+	margin: auto;*/
+	border: 3px solid #fff;
+	position: fixed;
+	top: 0px;
+	left: 400px;
+}
+
+.titulo button{
+	text-decoration: none;
+	width: 90px;
+	heigth: 70px;
+	background: red;
+	font-size: 16px;
+	margin: 15px;
+	text-align: center;
+	/*position: fixed;
+	bottom: 30px;
+	left: 450px;*/
+	float: left;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#cronometro a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+#cronometro p{
+	font-size: 700px;
+	color: red;
+}
+
+#start{
+	/*display: block;*/
+	width: 100px;
+	heigth: 80px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	margin: 15px;
+	position: fixed;
+	top: 100px;
+	left: 0;
+
+}
+
+#reset1{
+	/*display: block;*/
+	width: 100px;
+	heigth: 80px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	margin: 15px;
+}
+
+#reset2{
+	/*display: block;*/
+	width: 100px;
+	heigth: 80px;                                        
+	background: red;                                     
+	color: #fff;  
+	font-size: 30px;
+	margin: 15px;
+	position: fixed;
+	top: 400px;
+	left: 0;
+}
+
+#pause{
+	/*display: block;*/
+	width: 100px;
+	heigth: 80px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	margin: 15px;
+	position: fixed;
+	top: 200px;
+	left: 0;
+}
+
+#reset1{
+	/*display: block;*/
+	width: 100px;
+	heigth: 80px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	margin: 15px;
+	position: fixed;
+	top: 300px;
+	left: 0;
+
+}
+
+#cont-img{
+	float: right;
+}
+
+#info{
+	text-align: right;
+	font-size: 20px;
+	color: #fff;
+	position: fixed;
+	top: 580px;
+	left: 5px;
+}
+
+/*#img{
+	width: 400px;
+	height: 300px;
+	position: fixed;
+	top: 130px;
+	right: 50px;
+}*/
+
+.titulo{
+	text-align: center;
+	font-size: 18px;
+	color: #000;
+	padding: 10px;
+	border: 3px solid #fff;
+}
+
+.titulo2 h1{
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	padding: 10px;
+	position: fixed;
+	top: 5px;
+	left: 80px;
+}
+
+/*@media screen and (max-width:6000px){
+	body{
+		flex-direction: column;
+		height: 100%;
+	}
+	#container{
+		height: 100%;
+	}
+}*/
+
+

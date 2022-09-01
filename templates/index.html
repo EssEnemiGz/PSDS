@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PSDS Basketball</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">   
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/codigo.css') }}">
+</head>
+<body>
+	<header>
+		<div class="titulo">
+			<h1>Holaaaaaaaaaa</h1>
+			<div class="titulo2">
+					<h1>Clásico<br>Ultimate</h1>
+				<br>
+				<br>
+				<br>
+				<form method="POST" action="/start">
+					<button type="submit" id="start">Start</button>
+				</form>
+				<form method="POST" action="/pause">
+					<button type="submit" id="pause">Pausa</button>
+				 </form>
+				<form method="POST" action="/reset1">
+					<button type="submit" id="reset1">{{ data[1] }}</button>
+				</form>
+				<form method="POST" action="/reset2">
+					<button type="submit" id="reset2">{{ data[2] }}</button>
+				</form>
+			</div>
+
+		</div>
+		<div id="container">
+			<div id="cronometro">
+				<p>{{ data[0] }}</p>
+			</div>
+			<div id="cont-img">
+				<h2 id="info">Creador: TCER</h2>
+			</div> 
+		</div>
+	</header>
+</body>
+</html>
