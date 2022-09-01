@@ -31,11 +31,11 @@ def principal():
 def index():
     data = timer()
 
-    if data == 0:
-        time.sleep(1)
-        return redirect("/cronometro")
-    else:
-        return render_template("cronometro.html", data=data)
+    #if data == 0:
+     #   time.sleep(1)
+      #  return redirect("/cronometro")
+    #else:
+    return render_template("cronometro.html", data=data)
 
 @app.route("/start", methods=["POST"])
 def start():

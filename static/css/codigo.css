@@ -169,6 +169,19 @@ header{
 	left: 80px;
 }
 
+#link{
+	/*display: block;*/
+	width: 200px;
+	heigth: 100px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	margin: 15px;
+	position: fixed;
+	top: 650px;
+	left: 765px;
+}
+
 /*@media screen and (max-width:6000px){
 	body{
 		flex-direction: column;
