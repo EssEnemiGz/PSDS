@@ -130,6 +130,18 @@ header{
 
 }
 
+#res{
+	width: 100px;
+	heigth: 80px;
+	background: red;
+	color: #fff;
+	font-size: 30px;
+	margin: 15px;
+	position: fixed;
+	/*top: 400px;
+	left: 0;*/
+}
+
 #cont-img{
 	float: right;
 }

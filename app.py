@@ -62,11 +62,29 @@ def reset2():
 @app.route("/pause", methods=["POST"])
 def pause():
     dato = int(open("main").read().strip())
+    p1 = open("priority").read().strip()[0]
+    p2 = open("priority").read().strip()[1]
     os.remove("main")
     with open("main", "w") as main:
-        if dato != 24 or dato != 14 and dato < 24: main.write(str(dato+1))
+        if dato != p1 or dato != p2 and dato < p1: main.write(str(dato+1))
         else: main.write(str(dato))
     return redirect("/") 
+
+@app.route("/res", methods=["POST"])
+def res():
+    dato = int(open("main").read().strip())
+    os.remove("main")
+    with open("main", "w") as main:
+        main.write(str(dato-1))
+    return redirect("/")
+
+@app.route("/sum", methods=["POST"])
+def sum():
+    dato = int(open("main").read().strip())
+    os.remove("main")
+    with open("main", "w") as main:
+        main.write(str(dato+1))
+    return redirect("/")
 
 if __name__=="__main__":
     app.run(debug=True)
